@@ -90,7 +90,7 @@ export default class Sticky extends Component {
             bottomDifference > 0
               ? this.props.relative
                 ? parent.offsetTop - parent.offsetParent.scrollTop
-                : 0
+                : -this.props.topOffset 
               : bottomDifference,
           left: placeholderClientRect.left,
           width: placeholderClientRect.width
